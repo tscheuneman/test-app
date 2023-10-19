@@ -5,7 +5,8 @@ env:
 
 on:
   pull_request:
-    branches: ['main', 'features/*', 'feature/*']
+    types:
+      - opened
 
 Deploy-Preview:
     runs-on: ubuntu-latest
